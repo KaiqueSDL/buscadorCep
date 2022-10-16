@@ -1,0 +1,91 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, rgba(255, 157, 1, 1) 0%, rgba(255, 219, 71, 1) 58%);
+}
+
+.titulo {
+    font-size: 85px;
+    color: black;
+    animation: flipTitulo 2s;
+
+}
+
+@keyframes flipTitulo {
+    from {
+        transform: rotateX(90deg);
+    }
+
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+
+.contInput {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3)
+}
+
+.contInput input{
+    background-color:  transparent;
+    border: 0;
+    font-size: 20px;
+    color: #fff;
+    outline: none;
+    margin-right:10px;
+}
+
+.contInput input::placeholder{
+    color: #fff;
+}
+
+.btnBuscar{
+     background-color: transparent;
+     border: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     transition: ease 0.5s;
+}.btnBuscar:hover{
+    transform: scale(1.2);
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    width: 400px;
+    border-radius: 8px;
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 30px;
+}
+.main span{
+    margin-bottom: 14px;
+    font-weight: bold;
+}
+
+@media(   max-width: 820px) {
+    .titulo{
+       font-size: 65px;
+    }
+   }
+@media(   max-width: 620px) {
+ .titulo{
+    font-size: 45px;
+ }
+}
