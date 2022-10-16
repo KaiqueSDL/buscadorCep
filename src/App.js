@@ -54,8 +54,10 @@ function App() {
 
   return (
     <div className="container">
+        
+        <img src='https://logospng.org/download/correios/logo-correios-2048.png' className='imgCorreio'></img>
         <h1 className="titulo"> Buscador de cep </h1>
-    
+        
     <div className='contInput'>
         
         <input type="text" 
